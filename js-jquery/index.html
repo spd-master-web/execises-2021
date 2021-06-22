@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery</title>
+  <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+
+  <ul>
+    <li>Lorem.</li>
+    <li>Aut!</li>
+    <li>Illo!</li>
+    <li class="special">Itaque!</li>
+    <li>Delectus.</li>
+    <li>Expedita.</li>
+  </ul>
+    
+  <script>
+    //  Comments
+    /* 
+        multi
+        line 
+        comment
+    */
+    // single line comment
+
+    // JavaScript
+    // alert("Hello it's me"); // will open the browser alert dialog every time the page loads
+    console.log("was it me your looking for?");
+    console.error("not really");
+    console.info("but maybe");
+    // jQuery (JS library)
+    // $ --> is an abbreviation for jQuery
+    // $("li") --> inside the brackets is the selector
+    // $("li").method --> after the dot comes the method
+
+    // .css() method
+    // .css("property", "value") method
+
+    // Let's select the unordered list and add a border
+    $("li").css("border", "1px solid red");
+    jQuery("li").css("border", "1px solid red");
+
+    $("li.special").css("border", "10px solid pink");
+
+  </script>
+</body>
+</html>
