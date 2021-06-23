@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* available globaly */
+  --text-color: rgb(0, 145, 255);
+  --bg-color: rgb(228, 228, 52);
+
+  font-size: 200%;
+}
+
+@media (max-width: 600px) {
+  :root {
+    /* available globaly */
+    --bg-color: rgb(0, 145, 255);
+    --text-color: rgb(228, 228, 52);
+
+    font-size: 100%;
+  }
+
+}
+
+
+body {
+  margin: 0;
+
+  background-color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+h1 {
+  font-size: 5em;
+  font-family: sans-serif;
+  color: var(--bg-color);
+}
