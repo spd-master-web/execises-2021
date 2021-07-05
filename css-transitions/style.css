@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 300px;
+  height: 100px;
+
+  color: white;
+  background-color: pink;
+  border: none;
+
+  /* transition */
+  transition-property: background;
+  transition-duration: 150ms; /* 1s 1000ms */
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+
+  /* shorthand */
+  transition: background 150ms ease-in 0s;
+}
+
+button p {
+  transition: font-size .5s ease-in;
+}
+
+/* The primary input mechanism can conveniently hover over elements. */
+@media (hover: hover) {
+  button:hover {
+    background-color: red;
+
+    transition-duration: 1000ms;
+    transition-timing-function: ease-out;
+  }
+
+  button:hover p {
+    font-size: 200%;
+  }
+}

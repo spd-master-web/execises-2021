@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+
+  background-color: greenyellow;
+
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.box:hover {
+  animation-play-state: running;
+  /* animation: changeColorOnHover 500ms forwards; */
+}
+
+/* DEFINE THE ANIMATION */
+@keyframes changeColor {
+  0% {
+    background-color: yellow;
+  }
+  33% {
+    background-color: orange;
+  }
+  66% {
+    background-color: orangered;
+  }
+}
+
+@keyframes changeColorOnHover {
+  to {
+    background-color: purple;
+  }
+}
